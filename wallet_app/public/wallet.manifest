@@ -16,7 +16,7 @@ NETWORK:
 js/RequestPut.js
 js/RequestGet.js
 js/RequestDel.js
-db/serjav.sqlite
+db/wallet.sqlite
 
 
 # offline.html will be displayed if the user is offline
