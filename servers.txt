@@ -1,0 +1,14 @@
+Para FastApi, abrir terminal en la carpeta del proyecto
+
+uvicorn app:app --reload
+
+uvicorn app:app --host 192.168.1.50 --reload
+
+sudo python3 -m uvicorn app:app --host 192.168.1.50 --ssl-keyfile=/etc/letsencrypt/live/serjav.mooo.com/privkey.pem --ssl-certfile=/etc/letsencrypt/live/serjav.mooo.com/fullchain.pem --reload
+
+
+
+
+Para web index, abrir terminal en la carpeta public
+
+python3 -m http.server --bind 127.0.0.1 9000

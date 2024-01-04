@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" manifest="./serjav.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./resources/money-bag-dollar-color-icon.svg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Serja Wallet</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+      <h1><img src="./resources/money-bag-dollar-color-icon.svg" alt="Budget icon" href="#home">Serjav</h1>
+
+    <div id="container" class="hidden">
+        <div id="username-group" class="groupusername" align ="center">
+            <label for="username-selector">Activar Usuario</label>
+            <table>
+                <tr>
+                  <td><B>Nombre Inicio Sesión</B></td>
+                  <td><input id="name-username" size="10"></input></td>
+                </tr>
+                <tr>
+                  <td align ='right'><B>Pin</B></td>
+                  <td><input id="pin-username" maxlength="4" size="2" value="0000"></input></td>
+                </tr>
+            </table>
+            <div name="username-selector" id="username-selector">
+                <div id="button-username-group">
+                    <ul></ul>
+                    <button id="button-add-username" class="action-button">Empezar</button>
+                </div>
+                <br><br>
+            </div>
+            </div>
+            <div>
+                <ul>
+                    <li><B>Bienvenido/a a Serjav Wallet.</B></li>
+                    <li>En los Wallet podrás utilizar un <B>'Alias'</B> más amigable que el Nombre de Sesión.</li>
+                    <li>Si introduces un código PIN de 4 números.</li>
+                    <ol>
+                        <li>Tus <B>Wallets</B> serán <B>Privados</B>.</li>
+                        <li>Puedes, si lo deseas, <B>compartir</B> tus Wallets con los participantes.</li>
+                        <li>Podrás acceder a tus Wallets desde <B>otros dispositivos</B>.</li>
+            </ol>
+            <li>Si ya <B>tienes Pin</B>.
+                <ol>
+                    <li>Introduce tu Nombre de Inicio de Sesión.</li>
+                    <li>Introduce el Pin.</li>
+                    <li>Y podrás recuperar tus Wallets.</li>
+
+                </ol>
+            </ul>
+            </div>
+        </div>
+           
+    </div>
+    
+</body>
+
+<script src="./js/main.js" type="module"></script>
+</html>

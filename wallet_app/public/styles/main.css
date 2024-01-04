@@ -1,0 +1,255 @@
+:root {
+    --main-color: rgba(62, 125, 82, 0.651);
+    --secondary-color: rgb(104, 190, 124);
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    padding: 0;
+    margin: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+hr {
+    color: black;
+    background-color: black;
+    width: 75%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+    padding: 0.4rem;
+}
+
+
+h1 img {
+    margin-right: 0.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+label {
+    font-weight: bold;
+    
+    
+}
+
+.changeInput {
+    Background-color: #ffff0083;
+}
+
+.changeInputError {
+    Background-color: #ff000042;
+}
+
+
+ul {
+    display: block;
+    list-style-type: square;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+#wallets-group {
+    
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+
+#wallets-group label {
+    display: flex;
+    align-items: center;
+}
+
+#wallet-group select {
+    display: flex;
+    align-items: center;
+    
+}
+
+#transactions {
+    border: 1px solid gray;
+    height: 50vh;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+#resumen_deuda {
+    border: 2px solid gray;
+    height: 20vh;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+#resumen_pago {
+    font-size: 10px;
+    border: 1px solid gray;
+    height: 20vh;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    
+}
+
+#buttons-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#buttons-group.hidden {
+    display: none;
+}
+
+.action-button {
+    border: 1px solid #ffffff; /*anchura, estilo y color borde*/
+    border-radius: 8px; /*bordes redondos*/
+    min-width: 50px;
+    padding: 5px; /*espacio alrededor texto*/
+    background-color: var(--main-color); /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    /*text-transform: uppercase; /*capitalización texto*/
+}
+
+.mini-button {
+    border: 0px solid #ffffff00; /*anchura, estilo y color borde*/
+    /*border-radius: 50px; /*bordes redondos*/
+    min-width: 0px;
+    padding: 0px; /*espacio alrededor texto*/
+    background-color: var(--main-color); /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    /*display: inline ;*/
+}
+
+.mini-button-hidden {
+    border: 0px solid #ffffff00; /*anchura, estilo y color borde*/
+    /*border-radius: 50px; /*bordes redondos*/
+    min-width: 0px;
+    padding: 0px; /*espacio alrededor texto*/
+    background-color: var(--main-color); /*color botón*/
+    color: #ffffff; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    /*display: none;*/
+    visibility: hidden;
+}
+
+.cuadricula {
+    display: grid;
+    /*grid-template-columns: 0.6fr 1fr 0.6fr 0.1fr; */
+    grid-template-columns: 0.7fr 2fr 0.7fr;
+    grid-gap: 5px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0.5rem;
+}
+
+.cuadriculaWallet {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    grid-gap: 10px;
+    border-bottom: 1px solid gray;
+    border-bottom-left-radius: 50%;
+    border-width: 2px;
+    margin-bottom: 1rem;
+    width: 50%;
+    overflow-y: auto;
+}
+
+.participa {
+
+    font-size: 10px;
+}
+
+
+
+.add_date label {
+    display: flex;
+    align-items: center;
+}
+
+.add_date span::after {
+    padding-left: 5px;
+}
+
+.add_date input:invalid+span::after {
+    content: "✖";
+}
+
+.add_date input:valid+span::after {
+    content: "✓";
+}
+
+@media (min-width: 600px) {
+    body {
+        max-width: 600px;
+        margin: auto;
+        background-color: lightgray;
+    }
+}
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    border: 0px;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    
+    text-align: right;
+    
+  }
+  
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 8px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: right;
+    
+  }
+  
+  .topnav a.icon {
+    background: rgba(128, 107, 107, 0);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(221, 221, 221);
+    color: rgb(62, 125, 82, 0.651);
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+

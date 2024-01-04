@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" manifest="serjav.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./resources/money-bag-dollar-color-icon.svg">
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Serja Wallet</title>
+
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <h1><img src="./resources/money-bag-dollar-color-icon.svg" alt="Budget icon" href="#home">Serjav</h1>
+      <div id="myLinks">
+        <a id="menuCategorys" href="#menuCategorys">Categorías</a>
+        <a id="menuUser" href="#menuUsers">Editar Usuario</a>
+        <a id="menuSession" href="#menuSession">Cerrar Sesión</a>
+        <a id="menuAbout" href="#menuAbout">Sobre</a>
+        <label>Versión 1.5.5</lavel>
+      </div>
+      <a id="funtionMenu" href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <textarea id="aboutText" name="aboutText" rows="10" cols="40" class="hidden">
+        Esta aplicación pretende servir para llevar las cuentas de viaje y realizar pagos por varias personas. Al finalizar el viaje, se obtendrá ajuste de cuentas indicando quién debe dinero y a quién se le debe.
+        
+        10/03/2023 - Añadido Wallets privados y recuperables por Usuario.
+        14/03/2023 - Añadido Edición de Usuario.
+        19/03/2023 - Muestra Wallet de Prueba si no se pertenece a ninguno.
+        </textarea>
+    <!-- End smartphone / tablet look -->
+</div>
+<div id="offline-container">
+    <label for="offline-container-label">Necesita de Conexión a Internet para Funcionar.</label>
+    </div>
+</body>
+
+
+</html>
