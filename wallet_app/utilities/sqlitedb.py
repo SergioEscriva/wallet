@@ -4,9 +4,9 @@ import shutil
 
 class Database():
     def __init__(self):
-        self.DB_PATH = "./db/serjav.sqlite"
-        #self.DB_PATH = "../db/serjav.sqlite"
-        self.DBAK_PATH = "./db/serjav.bak"
+        self.DB_PATH = "./db/wallet.sqlite"
+        #self.DB_PATH = "../db/wallet.sqlite"
+        self.DBAK_PATH = "./db/wallet.bak"
         self.connectToDatabase()
     
         

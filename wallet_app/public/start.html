@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" manifest="./serjav.manifest">
+<html lang="en" manifest="./wallet.manifest">
 
 <head>
     <meta charset="UTF-8">
@@ -19,24 +19,22 @@
 
     <!-- Top Navigation Menu -->
     <div class="topnav">
-      <h1><img src="./resources/money-bag-dollar-color-icon.svg" alt="Budget icon" href="#home">Serjav</h1>
-      <div id="myLinks">
+    <h1><img src="./resources/money-bag-dollar-color-icon.svg" alt="Budget icon" href="#home">Wallet</h1>
+    <div id="myLinks">
         <a id="menuCategorys" href="#menuCategorys">Categorías</a>
         <a id="menuUser" href="#menuUsers">Editar Usuario</a>
         <a id="menuSession" href="#menuSession">Cerrar Sesión</a>
         <a id="menuAbout" href="#menuAbout">Sobre</a>
         <label>Versión 1.5.5</lavel>
-      </div>
-      <a id="funtionMenu" href="javascript:void(0);" class="icon">
+    </div>
+    <a id="funtionMenu" href="javascript:void(0);" class="icon">
         <i class="fa fa-bars"></i>
-      </a>
+    </a>
     </div>
     <textarea id="aboutText" name="aboutText" rows="10" cols="40" class="hidden">
         Esta aplicación pretende servir para llevar las cuentas de viaje y realizar pagos por varias personas. Al finalizar el viaje, se obtendrá ajuste de cuentas indicando quién debe dinero y a quién se le debe.
         
-        10/03/2023 - Añadido Wallets privados y recuperables por Usuario.
-        14/03/2023 - Añadido Edición de Usuario.
-        19/03/2023 - Muestra Wallet de Prueba si no se pertenece a ninguno.
+        01/01/2024 - Adecuando nombres
         </textarea>
     <!-- End smartphone / tablet look -->
 </div>
@@ -137,7 +135,7 @@
             <div id="addtransaction" style="text-align: center">
                 <input class="hidden" id="transac_id" value="">
                 <div style="text-align: center"> <div><label for="description">¿El qué?</label></div><div><input type="text" id="description_add"  name="description" minlength="4"  size="25" ></div><br>
-                <div><label for="amount">¿Cuanto?</label></div><div><input type="text" id="amount_add" name="amount" required minlength="4" size="25"></div><br>
+                <div><label for="amount">¿Cuanto (€)?</label></div><div><input type="text" id="amount_add" name="amount" required minlength="4" size="25"></div><br>
                 <div><label for="payers-selector">¿Quién Paga?</div><div></label><select style="width:260px" name="payers-selector" id="payers-selector" ></select></div><br>
 
                 <div><label for="participants-selector">¿Participantes?</div><br><div></label><label style="width:260px" name="participants-selector" id="participants-selector" size="3" multiple onblur="myFunction()"></label></div><br>
@@ -166,7 +164,7 @@
                 </div>
                 </div>
             </div>    
-                     
+                
         </div>
 
         <div id="edit-transaction-group" class="hidden">
@@ -174,7 +172,7 @@
             <div style="text-align: center"> <div><label for="description">¿Qué?</label></div><div><input type="text" id="description_edit" name="description" required minlength="4"  size="25"></div><br>
 
 
-            <div><label for="amount_edit">¿Cuanto?</label></div><div><input type="text" id="amount_edit" name="amount_edit" required minlength="4" size="25"></div><br>
+            <div><label for="amount_edit">¿Cuanto (€)?</label></div><div><input type="text" id="amount_edit" name="amount_edit" required minlength="4" size="25"></div><br>
 
 
             <div><label for="payers-edit">¿Quién Paga?</div><div></label><input style="width:260px" name="payers-edit" id="payers-edit" ></input></div><br>

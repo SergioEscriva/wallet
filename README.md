@@ -13,13 +13,13 @@ Esta aplicación pretende servir para llevar las cuentas de viaje y realizar pag
 
 ## Backend
 
-En la carpeta `wallet_app/v1` ejecutar el comando `uvicorn app:app --reload`
+En la carpeta `wallet_app` ejecutar el comando `uvicorn app:app --reload`
 
 (la API se sirve en 127.0.0.1:8000)
 
 ## Frontend
 
-En la carpeta `waller_app/v1/public` ejecutar el comando `python3 -m http.server --bind 127.0.0.1 9000`
+En la carpeta `wallet_app/public` ejecutar el comando `python3 -m http.server --bind 127.0.0.1 9000`
 
 (la aplicación se sirve en 127.0.0.1:9000)
 
